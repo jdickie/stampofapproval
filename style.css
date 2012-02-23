@@ -2821,7 +2821,9 @@ Overwriting styles for gallery pages
 }
 #post-1423 div.entry-content a img {
 	border: none !important;
+	width: 150px !important;
 	
+	overflow: hidden;
 	background: url('images/shadowAlpha.png') no-repeat bottom right !important;
 }
 #post-1423 div.entry-content a img:hover {
