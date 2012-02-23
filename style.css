@@ -500,12 +500,7 @@ a:hover {
 /* =Header
 ----------------------------------------------- */
 
-#branding {
-	border-top: 2px solid #bbb;
-	padding-bottom: 10px;
-	position: relative;
-	z-index: 9999;
-}
+
 #site-title {
 	margin-right: 270px;
 	padding: 3.65625em 0 0;
@@ -527,11 +522,7 @@ a:hover {
 	font-size: 14px;
 	margin: 0 270px 3.65625em 0;
 }
-#branding img {
-	height: 699px !important;
-	margin-bottom: -7px;
-	width: 100%;
-}
+
 
 
 /* =Menu
@@ -547,7 +538,7 @@ a:hover {
 	clear: both;
 	display: block;
 	float: left;
-	margin: 0 auto 6px;
+	margin: 465px auto 6px;
 	width: 100%;
 }
 #access ul {
@@ -565,6 +556,8 @@ a:hover {
 
 #access li.page_item {
 	display: inline;
+	
+	text-indent: -9999px;
 }
 
 #access a {
@@ -575,34 +568,7 @@ a:hover {
 	text-decoration: none;
 }
 
-/*
-Unique Images for individual pages in nav bar
-*/
-#access li.page_item.page-item-1421 a {
-	
-	text-indent: -9999px;
-	width: 127px;
-	height: 35px;
-	background: url('images/about\ USPS.jpg') no-repeat;
-}
-#access li.page_item.page-item-1425 a {
-	text-indent: -9999px;
-	width: 103px;
-	height: 32px;
-	background: url('images/Collectibles.jpg') no-repeat;
-}
-#access li.page_item.page-item-1427 a {
-	text-indent: -9999px;
-	width: 141px;
-	height: 46px;
-	background: url('images/Stamp\ Artists.jpg') no-repeat;
-}
-#access li.page_item.page-item-1423 a {
-	text-indent: -9999px;
-	width: 241px;
-	height: 44px;
-	background: url('images/Stamps\ currently\ for\ sale.jpg') no-repeat;
-}
+
 
 #access ul ul {
 	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -2321,6 +2287,9 @@ p.comment-form-comment {
 	.page-template-showcase-php .other-recent-posts {
 		border-bottom: 1px solid #ddd;
 	}
+	
+	
+	
 	/* Simplify the showcase template when small feature */
 	section.featured-post .attachment-small-feature,
 	.one-column section.featured-post .attachment-small-feature {
@@ -2711,4 +2680,153 @@ p.comment-form-comment {
 }
 #ie7 section.recent-posts {
 	margin-right: 7.6%;
+}
+
+/*
+Main CSS changes for USPS Site
+@author: Grant Dickie
+
+Below are the major changes to the style from Twenty Eleven.
+For editing of the particulars of this theme, see below for notes
+and options.
+*/
+
+/*
+Hidden menu items 
+These are menu items that will be hidden on the top navigation bar,
+but will be present on the side bar
+*/
+#access li.page_item.page-item-1430, #access li.page_item.page-item-1451, #access li.page_item.page-item-1442,
+#access li.page_item.page-item-1445 {
+	display: none;
+}
+#branding #access a {
+	padding: 24px;
+}
+/*
+Unique Images for individual pages in nav bar
+*/
+#access li.page_item.page-item-1421 a {
+	
+	width: 60px;
+	height: 33px;
+	background: url('images/about-small.jpg') no-repeat;
+}
+#access li.page_item.page-item-1425 a {
+	width: 150px;
+	height: 40px;
+	background: url('images/collectible-small.jpg') no-repeat;
+}
+#access li.page_item.page-item-1427 a {
+	width: 150px;
+	height: 44px;
+	background: url('images/stamp-artist-small.jpg') no-repeat;
+}
+#access li.page_item.page-item-1423 a {
+	width: 300px;
+	height: 57px;
+	background: url('images/stamps-currently-for-sale-small.jpg') no-repeat;
+}
+
+/*Styling for the Blog header */
+#branding {
+	/* Getting rid of top shadow border
+	for header image */
+/*	border-top: 2px solid #bbb; */
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 9999;
+	height: 459px !important;
+	width: 100%;
+	background: url('images/uspsblogheader-short.jpg') no-repeat;
+	margin-bottom: -7px;
+}
+#branding a {
+	padding: 400px;
+}
+#branding a img {
+	display: none;
+}
+
+/*
+Sidebar widget themes
+*/
+
+/*
+Universal style for the author widget items
+*/
+#secondary .widget.widget_nav_menu div {
+	width: 340px;
+}
+#secondary .widget.widget_nav_menu div ul {
+	list-style-type: none;
+}
+#secondary .widget.widget_nav_menu div ul li {
+	display: block;
+	
+}
+#secondary .widget.widget_nav_menu div ul li a {
+	float: left;
+	width: 150px;
+	height: 75px;
+	margin-left: 4px;
+	/* Making the link text dissappear so we 
+	can see background image instead*/
+	text-indent: -9999px;
+	text-decoration: none;
+}
+
+
+/* Theme for: Mary Stephanos*/
+#secondary .widget.widget_nav_menu div ul li#menu-item-1450 a {
+	background: #fff url('images/stamp\ blog\ portrait-\ Mary.jpg') 40% 40% no-repeat;
+}
+/* Clare LaVergne */
+#secondary .widget.widget_nav_menu div ul li#menu-item-1449 a {
+	background: #fff url('images/stamp\ blog\ portrait-Clare-small.jpg') 40% 40% no-repeat;
+}
+
+/* Sonja Edison */
+#secondary .widget.widget_nav_menu div ul li#menu-item-1453 a {
+	background: #fff url('images/stamp\ blog\ portrait-Sonja-small.jpg') 40% 40% no-repeat;
+	
+}
+
+/*Alan Siegel*/
+#secondary .widget.widget_nav_menu div ul li#menu-item-1448 a {
+	background: #fff url('images/stamp\ blog\ portrait-Alan-small.jpg') 40% 40% no-repeat;
+	
+}
+
+/*
+Gets rid of title showing up on a page
+*/
+.page.type-page .entry-header {
+	display: none;
+}
+
+/*Overwriting search feature in top nav bar */
+.only-search.with-image {
+	display: none;
+}
+
+
+/* 
+Overwriting styles for gallery pages
+*/
+#post-1423 div.entry-content a {
+	padding: 4px;
+	
+
+}
+#post-1423 div.entry-content a img {
+	border: none !important;
+	
+	background: url('images/shadowAlpha.png') no-repeat bottom right !important;
+}
+#post-1423 div.entry-content a img:hover {
+	background: transparent;
+	border: none !important;
+	width: auto !important;
+	height: auto !important;
 }
