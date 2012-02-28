@@ -538,7 +538,7 @@ a:hover {
 	clear: both;
 	display: block;
 	float: left;
-	margin: 465px auto 6px;
+	margin: auto 6px;
 	width: 100%;
 }
 #access ul {
@@ -2736,16 +2736,19 @@ Unique Images for individual pages in nav bar
 	padding-bottom: 10px;
 	position: relative;
 	z-index: 9999;
+	/*
 	height: 459px !important;
+	*/
 	width: 100%;
+	/*
 	background: url('images/uspsblogheader-short.jpg') no-repeat;
+	*/
 	margin-bottom: -7px;
 }
 #branding a {
-	padding: 400px;
+	
 }
 #branding a img {
-	display: none;
 }
 
 /*
@@ -2768,7 +2771,9 @@ Universal style for the author widget items
 #secondary .widget.widget_nav_menu div ul li a {
 	float: left;
 	width: 150px;
-	height: 75px;
+	height: 180px;
+	margin-top: 4px;
+	text-align: center;
 	margin-left: 4px;
 	/* Making the link text dissappear so we 
 	can see background image instead*/
@@ -2776,25 +2781,26 @@ Universal style for the author widget items
 	text-decoration: none;
 }
 
+/* Theme for: USPS truck */
 
 /* Theme for: Mary Stephanos*/
 #secondary .widget.widget_nav_menu div ul li#menu-item-1450 a {
-	background: #fff url('images/stamp\ blog\ portrait-\ Mary.jpg') 40% 40% no-repeat;
+	background: #fff url('images/stamp\ blog\ portrait-Mary-small.jpg') center center no-repeat;
 }
-/* Clare LaVergne */
+/* Theme for: Clare LaVergne */
 #secondary .widget.widget_nav_menu div ul li#menu-item-1449 a {
-	background: #fff url('images/stamp\ blog\ portrait-Clare-small.jpg') 40% 40% no-repeat;
+	background: #fff url('images/stamp\ blog\ portrait-Clare-small.jpg') center center no-repeat;
 }
 
-/* Sonja Edison */
+/* Theme for: Sonja Edison */
 #secondary .widget.widget_nav_menu div ul li#menu-item-1453 a {
-	background: #fff url('images/stamp\ blog\ portrait-Sonja-small.jpg') 40% 40% no-repeat;
+	background: #fff url('images/stamp\ blog\ portrait-Sonja-small.jpg') center center no-repeat;
 	
 }
 
-/*Alan Siegel*/
+/* Theme for: Alan Siegel */
 #secondary .widget.widget_nav_menu div ul li#menu-item-1448 a {
-	background: #fff url('images/stamp\ blog\ portrait-Alan-small.jpg') 40% 40% no-repeat;
+	background: #fff url('images/stamp\ blog\ portrait-Alan-small.jpg') center center no-repeat;
 	
 }
 
@@ -2822,13 +2828,12 @@ Overwriting styles for gallery pages
 #post-1423 div.entry-content a img {
 	border: none !important;
 	width: 150px !important;
-	
-	overflow: hidden;
+	padding: 4px;
 	background: url('images/shadowAlpha.png') no-repeat bottom right !important;
 }
 #post-1423 div.entry-content a img:hover {
-	background: transparent;
 	border: none !important;
-	width: auto !important;
-	height: auto !important;
+	width: 150px !important;
+	padding: 8px;
+	border: yellow 2px solid !important;
 }
