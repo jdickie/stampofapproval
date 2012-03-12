@@ -2696,10 +2696,17 @@ Hidden menu items
 These are menu items that will be hidden on the top navigation bar,
 but will be present on the side bar
 */
-#access li.page_item.page-item-1430, #access li.page_item.page-item-1451, #access li.page_item.page-item-1442,
-#access li.page_item.page-item-1445 {
+#access li.page_item a {
 	display: none;
 }
+/*Creates perforated border for navigation bar at top*/
+#access {
+	padding: 10px;
+	background: url('images/perfborder.jpg') center bottom no-repeat;
+	border-top: solid 1px url('images/perferation\ boarder.jpg');
+	border-bottom: solid 1px url('images/perferation\ boarder.jpg');
+}
+
 #branding #access a {
 	padding: 24px;
 }
@@ -2707,22 +2714,25 @@ but will be present on the side bar
 Unique Images for individual pages in nav bar
 */
 #access li.page_item.page-item-1421 a {
-	
+	display: block;
 	width: 60px;
 	height: 33px;
 	background: url('images/about-small.jpg') no-repeat;
 }
 #access li.page_item.page-item-1425 a {
+	display: block;
 	width: 150px;
 	height: 40px;
 	background: url('images/collectible-small.jpg') no-repeat;
 }
 #access li.page_item.page-item-1427 a {
+	display: block;
 	width: 150px;
 	height: 44px;
 	background: url('images/stamp-artist-small.jpg') no-repeat;
 }
 #access li.page_item.page-item-1423 a {
+	display: block;
 	width: 300px;
 	height: 57px;
 	background: url('images/stamps-currently-for-sale-small.jpg') no-repeat;
@@ -2736,9 +2746,9 @@ Unique Images for individual pages in nav bar
 	padding-bottom: 10px;
 	position: relative;
 	z-index: 9999;
-	/*
+	
 	height: 459px !important;
-	*/
+	
 	width: 100%;
 	/*
 	background: url('images/uspsblogheader-short.jpg') no-repeat;
@@ -2822,18 +2832,43 @@ Overwriting styles for gallery pages
 */
 #post-1423 div.entry-content a {
 	padding: 4px;
-	
-
 }
-#post-1423 div.entry-content a img {
+#post-1427 div.entry-content a img, #post-1423 div.entry-content a img {
 	border: none !important;
 	width: 150px !important;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
 	padding: 4px;
 	background: url('images/shadowAlpha.png') no-repeat bottom right !important;
 }
-#post-1423 div.entry-content a img:hover {
+#post-1427 div.entry-content a img:hover, #post-1423 div.entry-content a img:hover {
 	border: none !important;
 	width: 150px !important;
-	padding: 8px;
-	border: yellow 2px solid !important;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	padding: 4px;
+	
+	background: url('images/shadowAlpha.png') no-repeat bottom right !important;
+}
+#post-1423 div.entry-content a:nth-child(even) img {
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	margin-right: 55px;
+	margin-top: -15px;
+}
+#post-1423 div.entry-content a:nth-child(3n) img {
+	-webkit-transform: rotate(15deg);
+	-moz-transform: rotate(15deg);
+	margin-left: -5px;
+	margin-top: 10px;
+}
+#post-1427 div.entry-content a:nth-child(5n) img, #post-1423 div.entry-content a:nth-child(5n) img {
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+
+}
+#post-1423 div.entry-content a:nth-child(7n) img {
+	margin-left: 67px;
+	margin-right: 22px;
+	margin-top: 10px;
 }
